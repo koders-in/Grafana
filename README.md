@@ -24,10 +24,28 @@ As of 2019, Google Analytics is the most widely used web analytics service on th
 Google Analytics has undergone many updates since its inception and is currently on its 4th iteration — GA4. GA4 is the default Google Analytics installation, and is the renamed version for the (App + Web) Property that Google released in 2019 in a Beta form. GA4 has also replaced Universal Analytics (UA). One notable feature of GA4 is a natural integration with Google's BigQuery — a feature previously only available with the enterprise GA 360. This move indicates efforts by Google to integrate GA and its free users into their wider cloud offering</p>
 ![Google Analytics](https://user-images.githubusercontent.com/87137729/186407964-c51afcad-3ea8-433a-8d0a-c2ea03d70c89.jpg)
 
-<h1>Redmine Dashboard Exporter</h1>
-<p>Python Exporter that fetches data from Redmine using Redmine API and exposes the metrices at an endpoint . The endpoint is then added to Prometheus. Promethues is used as datasource in Grafana  and Panels can be created using these metrices. </p>
-<h1>Google Analytics Dashboard</h1>
-<p>Python Exporter that fetches data from Google Analytics using Google Ananlytics API and then exposes it at an endpoint. Then this endpoint is accessed in grafana using infinity Datasource and panels are created using the same Data.</p>
+<h1>Network Exporter</h1>
+<p>It has an overview of Port/WiFi data for your Gateway and Access Points, including:
 
+Transmit / Receive
+Uptime
+Link status and speed
+Drop rate and retry (Unifi WiFi)
+As well as detailed switch stats for each port, including Unicast, Broadcast and Multicast packets.
 
+Uses Prometheus with the following exporters:
 
+SNMP Exporter
+With Grafana variables/constants, you can easily add:
+
+More gateway and switch ports
+More radios/Wifi networks </p>
+![system-monitoring](https://user-images.githubusercontent.com/68678634/186657268-467e9fc0-77bd-4b27-baf1-d61c887acc59.png)
+
+<h1>Gitub Exporter</h1>
+<p>In this we can fetch the data of the github repo's
+like some of the data which we can fetch is contributors, no of commits, issues (active, close), pull requests, comments.
+  we can fetch the the data using metrics and dimensions available in the github api documentation, then we can code them according to the data which we need from the github and attach that exporter to the prometheus using docker and then use it on grafana display the charts and stats which we need in our github exporter.
+</p>
+
+![comment_trends](https://user-images.githubusercontent.com/68678634/186653129-e61accd4-d665-429b-8359-4df72860a306.png)
