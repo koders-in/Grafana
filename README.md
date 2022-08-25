@@ -1,4 +1,4 @@
-# grafana-exporters
+# Grafana Exporters
 
 <h1>Grafana</h1> 
 <p>Grafana is multi-platform open source analytics and interactive visualization web application. It provides charts, graphs, and alerts for the web when connected to supported data sources. A licensed Grafana Enterprise version with additional capabilities is also available as a self-hosted installation or an account on the Grafana Labs cloud service. It is expandable through a plug-in system. End users can create complex monitoring dashboards using interactive query builders. Grafana is divided into front end and back end, written in TypeScript and Go, respectively.</p>
